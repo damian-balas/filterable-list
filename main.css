@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #888;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.site-header {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.site-header__heading {
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.search-form {
+  width: 80%;
+  margin-bottom: 2.5rem;
+}
+
+.search-form__input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.3rem;
+  transition: transform 0.1s ease-in-out;
+  border-bottom: 2px solid #0b650b;
+}
+
+.search-form__input:focus {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-form__input::placeholder {
+  color: #aaa;
+}
+
+.search-form__label {
+  font-size: 1.2rem;
+  display: block;
+  padding: 0.5rem 0;
+  color: #666;
+}
+.contacts {
+  width: 80%;
+  padding: 2rem 1rem;
+  list-style: none;
+}
+
+.letter-group {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.border-bottom:not(:last-child) {
+  border-bottom: 1px solid #888;
+}
+
+.letter-group .letter-group__letter {
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+
+.letter-group .letter-group__name {
+  padding-left: 2rem;
+}
+
+.letter-group__name a,
+.letter-group__name a:visited,
+.letter-group__name a:link {
+  color: #0b650b;
+  font-weight: 900;
+  display: inline-block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 1.65rem;
+  transition: 0.1s ease-in-out;
+}
+
+.letter-group__name a:hover,
+.letter-group__name a:focus {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.hide {
+  display: none !important;
+  padding: 0;
+}
